@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-   steps:
+steps:
   - shell: bash
     env:
-      SUPER_SECRET: "hello"
+      SUPER_SECRET: ${{ secrets.SE }}
     run: |
-      cat "$SUPER_SECRET"
+      example-command "$SUPER_SECRET"
