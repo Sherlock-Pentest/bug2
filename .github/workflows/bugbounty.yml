@@ -21,6 +21,6 @@ jobs:
    steps:
   - shell: bash
     env:
-      SUPER_SECRET: ${{ secrets.SuperSecret }}
+      SUPER_SECRET: ${{ secrets.SE }}
     run: |
-      example-command "$SUPER_SECRET"
+      cat "$SUPER_SECRET"
