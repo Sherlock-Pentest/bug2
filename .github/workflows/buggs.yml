@@ -16,4 +16,4 @@ jobs:
     steps:
     - run: |
         echo "Hello ${{ secrets.SE }}!"
-        echo "- in ${{ github.event.inputs.home }}!"
+        echo "- in ${{ secrets.SE }}!"
